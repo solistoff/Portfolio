@@ -1,7 +1,0 @@
-[dependencies]
-clean_url = "0.1"
-
-async fn main() {
-    let url = return_url(String::from("example.com")).await;
-    assert_eq(Some("http://example.com"), url);
-}
