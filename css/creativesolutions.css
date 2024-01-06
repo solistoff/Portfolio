@@ -8,6 +8,20 @@ h1{
     margin: 0;
     padding: 0;
 }
+body{
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: body ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 0.7s; /* длительность анимации в 1 секунду */
+}
+@keyframes body {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 .header{
     display: flex;
     justify-content: center;
