@@ -414,8 +414,8 @@ h1{
         font-size: 2vw;
     }
     .txt3 {
-    line-height: 2.3vw;
-    font-size: 1.5vw;
+        line-height: 2.3vw;
+        font-size: 1.5vw;
     }
     .overlaytxt1 {
         top: 8%;
@@ -508,4 +508,33 @@ h1{
     }
     .containericons {
         top: 1%;
+    }
+}
+@media (max-width: 500px) {
+    .logo {
+        width: 10vw;
+    }
+    .contact-button {
+        padding: 0vw 3vw;
+        border-radius: 5vw;
+        outline: 0.1vw solid #ffffff;
+        font-size: 2.5vw;
+    }
+    .memoji {
+        opacity: 98%;
+        width: 37vw;
+    }
+    .txt1 {
+        font-size: 4vw;
+    }
+    .txt2 {
+        margin-top: 0.9vw;
+        font-size: 3.4vw;
+    }
+    .txt3 {
+        line-height: 3.4vw;
+        margin-top: 5vw;
+        font-size: 2.1vw;
+    }
+
 }
