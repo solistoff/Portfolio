@@ -2,6 +2,5 @@ User-agent: *
 Disallow: /images/
 Allow: /images/volodymyrbohopolskyi.jpg
 Allow: /images/ogimage.png
-Allow: /
 
 Sitemap: https://volodymyrbohopolskyi.com/sitemap.xml
