@@ -1,0 +1,698 @@
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);        /* цвет зоны отслеживания */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(105, 105, 105);    /* цвет бегунка */
+  }
+body {
+    background-color: #1B1B1B;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.containeritems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+}
+/* navigation */
+.headercontainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    width: 89.93%;
+}
+.logo{
+    width: 4vw;
+    transition: 0.3s;
+}
+.logo:hover{
+    opacity: 20%;
+}
+.contact-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7vw 1vw;
+    outline: 0.13vw solid #ffffff;
+    color: white;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+    border-radius: 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    transition: 0.3s;
+}
+.contact-button:hover{
+    outline: 0.13vw solid #454545;
+}
+/* landing */
+.landingcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+    width: 90vw;
+    height: 34vw;
+}
+.column{
+    width: 25vw;
+}
+.memoji {
+    opacity: 98%;
+    width: 14vw;
+}
+.txt1 {
+    margin-top: 0.3vw;
+    font-size: 1.4vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: -0.02vw;
+}
+.txt2 {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: 0.03vw;
+}
+.txt3 {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.3vw;
+    font-variation-settings: "wdth" 100;
+    font-size: 0.8vw;
+    padding: 2.5vw;
+}
+.overlay1{
+    width: 100%;
+    position: relative;
+}
+.overlay1img{
+    width: 100%;
+    position: relative;
+    user-select: none;
+}
+.overlaytxt1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5vw;
+    font-variation-settings: "wdth" 100;
+    position: absolute;
+    top: 14%;
+    font-size: 2.2vw;
+    left: 43.8vw;
+    color: white;
+}
+/*  */
+.row {
+    position: absolute;
+    bottom: 7.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #1B1B1B;
+    border: none;
+    border-radius: 1.5vw;
+    width: 17vw;
+    height: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    background-color: #212121;
+  }
+  
+  .button img {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+  
+  .label {
+    font-size: 1.2vw;
+    color: #ddd;
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 0.04vw;
+  }
+/* overlay 2 */
+.overlay2{
+    width: 100%;
+    position: absolute;
+    top: 21vw;
+}
+.overlay2img{
+    width: 100%;
+    position: absolute;
+    top: 21vw;
+    user-select: none;
+}
+.pixelbackgroundphone{
+    display: none;
+}
+.pixelbackground{
+    position: absolute;
+    top: 31vw;
+    left: 15vw;
+    width: 70.7vw; 
+    user-select: none; 
+}
+.overlay2txt1 {
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    top: 65vw;
+    left: 15vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.overlay2txt2 {
+    width: 70.6vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 70vw;
+    left: 15vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+.overlay2txt3 {
+    width: 70.6vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 76vw;
+    left: 15vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+.overlay2txt4 {
+    width: 70.6vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 84.4vw;
+    left: 15vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+.overlay2txt5 {
+    width: 70.6vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 90.5vw;
+    left: 15vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+/* footer */
+.footer {
+    position: absolute;
+    top: 125.5vw;
+    width: 100%;
+    height: 25vw;
+}
+.containericons{
+    position: absolute;
+    left: 40vw;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+.youtubeico{
+    width: 3.7vw;
+    transition: 0.3s;
+}
+.youtubeico:hover{
+    opacity: 30%;
+}
+.instico{
+    width: 3vw;
+    transition: 0.3s;
+}
+.instico:hover{
+    opacity: 30%;
+}
+.telegramico{
+    width: 3vw;
+    transition: 0.3s;
+}
+.telegramico:hover{
+    opacity: 30%;
+}
+.footertxt1{
+    top: 4vw;
+    left: -5vw;
+    font-size: 7vw;
+    position: absolute;
+    color: white;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5vw;
+}
+.footertxt2{
+    top: 10vw;
+    left: 3vw;
+    font-size: 7vw;
+    position: absolute;
+    color: white;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5vw;
+}
+.footertxt3 {
+    top: 18.5vw;
+    left: 5.4vw;
+    font-size: 1vw;
+    position: absolute;
+    color: white;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0006bd;
+    letter-spacing: 0.1vw;
+}
+.footertxt4 {
+    top: 19.6vw;
+    left: 5.43vw;
+    font-size: 0.53vw;
+    position: absolute;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffe000;
+    letter-spacing: 0.1vw;
+}
+.volodymyrbohopolskyiphoto{
+    width: 1vw;
+    height: 1vw;
+    opacity: 0; 
+    position: absolute; 
+    left: -9999px;
+}
+
+/* Adaptation  */
+
+@media (max-width: 850px) {
+    .headercontainer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding: 7vw 8vw;
+        width: 83.75%;
+    }
+    .logo {
+        width: 6vw; 
+    }
+    .contact-button {
+        padding: 0.7vw 1.5vw;
+        outline: 0.1vw solid #ffffff;
+        font-size: 1.3vw;
+    }
+    .memoji {
+        opacity: 98%;
+        width: 23vw;
+    }
+    .txt1 {
+        font-size: 2.3vw;
+    }
+    .txt2 {
+        margin-top: 0.7vw;
+        font-size: 2vw;
+    }
+    .txt3 {
+        line-height: 2.3vw;
+        font-size: 1.5vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 2.6vw;
+        left: 43vw;
+    }
+    .row {
+        bottom: 5vw;
+    }
+    .button {
+        width: 20vw;
+        height: 20vw;
+    }
+    .button img {
+        width: 11vw;
+        height: 11vw;
+    }
+    .label {
+        margin-top: 1.7vw;
+        font-size: 1.3vw;
+    }
+    .pixelbackground {
+        top: 31vw;
+        left: 10.2vw;
+        width: 80vw;
+    }
+    .overlay2txt1 {
+        font-size: 2.5vw;
+        top: 69vw;
+        left: 10vw;
+    }
+    .overlay2txt2 {
+        width: 80.2vw;
+        line-height: 2.9vw;
+        font-size: 1.3vw;
+        top: 75vw;
+        left: 10vw;
+    }
+    .overlay2txt3 {
+        width: 80.2vw;
+        line-height: 2.9vw;
+        font-size: 1.3vw;
+        top: 83vw;
+        left: 10vw;
+    }
+    .overlay2txt4 {
+        width: 80.2vw;
+        line-height: 2.9vw;
+        font-size: 1.3vw;
+        top: 93.5vw;
+        left: 10vw;
+    }
+    .overlay2txt5 {
+        width: 80.2vw;
+        line-height: 2.9vw;
+        font-size: 1.3vw;
+        top: 104vw;
+        left: 10vw;
+    }
+    .overlay2img {
+        top: 21.7vw;
+        width: 100%;
+        height: 100vw;
+        background-color: #131313;
+        border-radius: 2.7vw 2.7vw 0vw 0vw;
+    }
+    .footer {
+        top: 147vw;
+        width: 100%;
+        height: 25vw;
+    }
+    .containericons {
+        top: 1%;
+    }
+}
+@media (max-width: 500px) {
+    .logo {
+        width: 10vw;
+    }
+    .contact-button {
+        padding: 0vw 3vw;
+        border-radius: 5vw;
+        outline: 0.4vw solid #ffffff;
+        font-size: 2.5vw;
+    }
+    .memoji {
+        opacity: 98%;
+        width: 37vw;
+    }
+    .txt1 {
+        font-size: 4vw;
+    }
+    .txt2 {
+        margin-top: 0.9vw;
+        font-size: 3.4vw;
+    }
+    .txt3 {
+        line-height: 3.4vw;
+        margin-top: 5vw;
+        font-size: 2.1vw;
+    }
+    .overlay1img {
+        width: 100%;
+        height: 152vw;
+        position: relative;
+        user-select: none;
+        background-color: #161616;
+        border-radius: 9vw 9vw 0vw 0vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 5vw;
+        left: 36.6vw;
+        font-weight: 400;
+    }
+    .row {
+        position: absolute;
+        bottom: 20vw;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8.4vw;
+        row-gap: 5vw;
+        width: 100%;
+        max-width: 100vw;
+        padding: 2vw;
+        box-sizing: border-box;
+    }
+      /* Каждая из первых двух кнопок занимает 44% ширины */
+      .button-wrapper {
+        flex: 0 0 44%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* Третья кнопка — на всю строку по центру */
+      .button-wrapper:nth-child(3) {
+        flex: 0 0 100%;
+        justify-content: center;
+        display: flex;
+      }
+      /* Кнопка адаптивная */
+      .button {
+        width: 40vw;
+        height: 40vw;
+        aspect-ratio: 1 / 1;
+        background-color: #1B1B1B;
+        border: none;
+        border-radius: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+      .button:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+        background-color: #212121;
+      }
+      .button img {
+        width: 24vw;
+        height: 24vw;
+        object-fit: contain;
+    }
+      .label {
+        margin-top: 3vw;
+        font-size: 3vw;
+        color: white;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.04em;
+    }
+    .overlay2img {
+        top: 125vw;
+        width: 100%;
+        height: 202vw;
+        background-color: #131313;
+        border-radius: 9vw 9vw 0vw 0vw;
+    }
+    .pixelbackgroundphone{
+        display: block;
+        position: absolute;
+        top: 125vw;
+        left: 0vw;
+        width: 100%;
+    }
+    .pixelbackground {
+        display: none;
+    }
+    .overlay2txt1 {
+        font-size: 5vw;
+        top: 203vw;
+        left: 37vw;
+        font-weight: 500;
+    }
+    .overlay2txt2 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        top: 215vw;
+        left: 4.5vw;
+    }
+    .overlay2txt3 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        top: 235vw;
+        left: 4.5vw;
+    }
+    .overlay2txt4 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        top: 270vw;
+        left: 4.5vw;
+    }
+    .overlay2txt5 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        top: 295vw;
+        left: 4.5vw;
+    }
+    .footer {
+        top: 347vw;
+        width: 100%;
+        height: 61vw;
+        background-color: #0e0e0e;
+    }
+    .containericons {
+        top: 18%;
+        gap: 8vw;
+        left: 29.5vw;
+    }
+    .instico {
+        width: 7vw;
+    }
+    .youtubeico {
+        width: 10vw;
+    }
+    .telegramico {
+        width: 7vw;
+    }
+    .footertxt1 {
+        top: 10vw;
+        left: -10vw;
+        font-size: 13vw;
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1.5vw;
+    }
+    .footertxt2 {
+        top: 20vw;
+        left: 6vw;
+        font-size: 13vw;
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1.5vw;
+    }
+    .footertxt3 {
+        top: 37vw;
+        left: 13vw;
+        font-size: 1.6vw;
+    }
+    .footertxt4 {
+        top: 39vw;
+        left: 13.1vw;
+        font-size: 0.89vw;
+    }
+}
