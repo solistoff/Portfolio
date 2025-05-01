@@ -1,0 +1,243 @@
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);        /* цвет зоны отслеживания */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(105, 105, 105);    /* цвет бегунка */
+  }
+body {
+    background-color: #1B1B1B;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.containeritems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+}
+.txt1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.headercontainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    width: 89.93%;
+}
+.logo{
+    width: 4vw;
+    transition: 0.3s;
+}
+.logo:hover{
+    opacity: 20%;
+}
+.contact-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7vw 1vw;
+    outline: 0.13vw solid #ffffff;
+    color: white;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+    border-radius: 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    transition: 0.3s;
+}
+.contact-button:hover{
+    outline: 0.13vw solid #454545;
+}
+/* landing */
+.landingcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+    width: 90vw;
+    height: 34vw;
+}
+.column{
+    width: 25vw;
+}
+.techlogo {
+    opacity: 98%;
+    width: 8vw;
+}
+.txt1 {
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: -0.02vw;
+}
+.txt2 {
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: 0.03vw;
+}
+.txt3 {
+    margin-top: 2vw;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.3vw;
+    font-variation-settings: "wdth" 100;
+    font-size: 1vw;
+    padding: 0.5vw 2.2vw;
+    background-color: #161616;
+    border-radius: 5vw;
+    transition: 0.3s;
+}
+.txt3:hover{
+    background-color: black;
+}
+.overlay1{
+    width: 100%;
+    position: relative;
+}
+.overlay1img{
+    width: 100%;
+    position: relative;
+    user-select: none;
+}
+.overlaytxt1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 370;
+    font-style: normal;
+    line-height: 1.5vw;
+    font-variation-settings: "wdth" 100;
+    position: absolute;
+    top: 14%;
+    font-size: 2.2vw;
+    left: 43.75vw;
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .headercontainer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding: 7vw 8vw;
+        width: 83.75%;
+    }
+    .logo {
+        width: 6vw; 
+    }
+    .contact-button {
+        padding: 0.7vw 1.5vw;
+        outline: 0.1vw solid #ffffff;
+        font-size: 1.3vw;
+    }
+    .techlogo {
+        opacity: 98%;
+        width: 16vw;
+    }
+    .txt1 {
+        font-size: 2.3vw;
+        margin-top: 4vw;
+    }
+    .txt2 {
+        margin-top: 0.7vw;
+        font-size: 1.77vw;
+    }
+    .txt3 {
+        margin-top: 5vw;
+        line-height: 2.3vw;
+        font-size: 1.9vw;
+        padding: 1.5vw 6vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 2.6vw;
+        left: 42.4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 10vw;
+    }
+    .contact-button {
+        padding: 0vw 3vw;
+        border-radius: 5vw;
+        outline: 0.4vw solid #ffffff;
+        font-size: 2.5vw;
+    }
+    .techlogo {
+        opacity: 98%;
+        width: 28vw;
+    }
+    .txt1 {
+        margin-top: 5vw;
+        font-size: 4vw;
+    }
+    .txt2 {
+        margin-top: 0.9vw;
+        font-size: 3.18vw;
+    }
+    .txt3 {
+        line-height: 3.4vw;
+        margin-top: 8vw;
+        font-size: 3vw;
+        padding: 2.5vw 9vw;
+    }
+    .overlay1img {
+        width: 100%;
+        height: 152vw;
+        position: relative;
+        user-select: none;
+        background-color: #161616;
+        border-radius: 9vw 9vw 0vw 0vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 5vw;
+        left: 36.6vw;
+        font-weight: 400;
+    }
+}
