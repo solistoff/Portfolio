@@ -1,0 +1,920 @@
+body::-webkit-scrollbar {
+    width: 6px;               /* ширина всей полосы прокрутки */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);        /* цвет зоны отслеживания */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(105, 105, 105);    /* цвет бегунка */
+  }
+body {
+    background-color: #1B1B1B;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.containeritems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+}
+/* navigation */
+.headercontainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    width: 89.93%;
+}
+.logo{
+    width: 4vw;
+    transition: 0.3s;
+}
+.logo:hover{
+    opacity: 20%;
+}
+.contact-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7vw 1vw;
+    outline: 0.13vw solid #ffffff;
+    color: white;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+    border-radius: 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    transition: 0.3s;
+}
+.contact-button:hover{
+    outline: 0.13vw solid #454545;
+}
+/* landing */
+.landingcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5vw;
+    width: 90vw;
+    height: 34vw;
+}
+.column{
+    width: 25vw;
+}
+.welcomelogo{
+    width: 9vw;
+    margin-top: 5vw;
+}
+.txt1 {
+    margin-top: 1vw;
+    font-size: 1.4vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: 0.03vw;
+}
+.txt2 {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    letter-spacing: 0.03vw;
+}
+.txt3 {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.3vw;
+    font-variation-settings: "wdth" 100;
+    font-size: 0.8vw;
+    padding: 2.5vw;
+}
+.overlay1{
+    width: 100%;
+    position: relative;
+}
+.overlay1img{
+    width: 100%;
+    position: relative;
+    user-select: none;
+}
+.overlaytxt1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5vw;
+    font-variation-settings: "wdth" 100;
+    position: absolute;
+    top: 10.5%;
+    font-size: 2.2vw;
+    left: 43.8vw;
+    color: white;
+}
+/*  */
+.row {
+    position: absolute;
+    bottom: 7.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    position: relative; 
+    background-color: #1B1B1B;
+    border: none;
+    border-radius: 1.5vw;
+    width: 17vw;
+    height: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    background-color: #212121;
+  }
+  
+  .button img {
+    position: absolute; 
+    width: 8.5vw;
+    height: 8.5vw;
+    transition: opacity 0.3s ease; 
+    display: block; 
+  }
+  
+  .button img.blackimage {
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  .button img:not(.blackimage) {
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .button:hover img.blackimage {
+    opacity: 0;
+  }
+  
+  .button:hover img:not(.blackimage) {
+    opacity: 1;
+  }
+
+  .label {
+    font-size: 1.2vw;
+    color: #ddd;
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 0.04vw;
+  }
+/* start */
+.overlay2 {
+    width: 100%;
+    position: absolute;
+    top: 21vw;
+}
+.overlay2img {
+    width: 100%;
+    position: absolute;
+    top: 21vw;
+    user-select: none;
+}
+.overlay2txt1 {
+    font-size: 1.5vw;
+    letter-spacing: 0.04vw;
+    color: #D8D8D8;
+    position: absolute;
+    top: 31vw;
+    left: 14.9vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+/* works */
+.image-container {
+    position: absolute;
+    top: 30vw;
+    left: 14.2vw;
+    display: flex;
+    justify-content: space-between;
+    width: 71.5%;
+}
+
+/* Стили для картинок */
+.image-container img {
+    width: 21.5vw;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Эффект при наведении */
+.image-container img:hover {
+    transform: scale(1.05); /* Увеличиваем картинку */
+}
+
+.image-container2 {
+    position: absolute;
+    top: 55vw;
+    left: 14.2vw;
+    display: flex;
+    justify-content: space-between;
+    width: 71.5%;
+}
+.image-container2 img {
+    width: 21.5vw;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+.image-container2 img:hover {
+    transform: scale(1.05); /* Увеличиваем картинку */
+}
+
+/* txt */
+.overlay2txt1 {
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    top: 55vw;
+    left: 45.2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.overlay2txt2 {
+    width: 71.5vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 61.5vw;
+    left: 14.1vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+.overlay2txt3 {
+    width: 71.5vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 67vw;
+    left: 14.1vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+.overlay2txt4 {
+    width: 71.5vw;
+    line-height: 2vw;
+    font-size: 1vw;
+    color: white;
+    position: absolute;
+    top: 75vw;
+    left: 14.1vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+}
+/* back button */
+.back-button {
+    position: absolute;
+    top: 85vw;
+    left: 46.4vw;
+    padding: 0.8vw 2.25vw;
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    border-radius: 2vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    transition: 0.3s;
+}
+.back-button:hover{
+    background-color: #2f2f2f;
+}
+.mobilecontent{
+    display: none;
+}
+/* footer */
+.footer {
+    background-color: #0e0e0e;
+    position: absolute;
+    top: 93.5vw;
+    width: 100%;
+    height: 31vw;
+}
+.containericons {
+    position: absolute;
+    left: 37.4vw;
+    top: 18.5%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+.youtubeico{
+
+    transition: 0.3s;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 0.09vw;
+}
+.youtubeico:hover{
+    opacity: 30%;
+}
+.instico {
+    transition: 0.3s;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 0.09vw;
+}
+.instico:hover{
+    opacity: 30%;
+}
+.telegramico{
+    transition: 0.3s;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 0.09vw;
+}
+.telegramico:hover{
+    opacity: 30%;
+}
+.footertxt1 {
+    top: 2vw;
+    left: -0.1vw;
+    font-size: 5.6vw;
+    position: absolute;
+    color: white;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5vw;
+}
+.footertxt2 {
+    top: 4.4vw;
+    left: -0.4vw;
+    font-size: 13.2vw;
+    position: absolute;
+    color: white;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5vw;
+}
+.footertxt3 {
+    top: 19vw;
+    left: -32vw;
+    position: absolute;
+    width: 3vw;
+}
+.footercalltxt {
+    top: 18vw;
+    left: 9vw;
+    font-size: 0.8vw;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+    letter-spacing: 0.037vw;
+}
+.footertxt4 {
+    top: 21.4vw;
+    left: -31.9vw;
+    font-size: 0.8vw;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #6d6d6d;
+    letter-spacing: 0.037vw;
+}
+/* Adaptation */
+@media (max-width: 850px) {
+    .headercontainer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding: 7vw 8vw;
+        width: 83.75%;
+    }
+    .logo {
+        width: 6vw; 
+    }
+    .contact-button {
+        padding: 0.7vw 1.5vw;
+        outline: 0.1vw solid #ffffff;
+        font-size: 1.3vw;
+    }
+    .welcomelogo {
+        width: 15vw;
+        margin-top: 5vw;
+    }
+    .txt1 {
+        font-size: 2.3vw;
+    }
+    .txt2 {
+        margin-top: 0.7vw;
+        font-size: 2vw;
+    }
+    .txt3 {
+        line-height: 2.3vw;
+        font-size: 1.5vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 2.6vw;
+        left: 43vw;
+    }
+    .row {
+        bottom: 5vw;
+    }
+    .button {
+        width: 20vw;
+        height: 20vw;
+    }
+    .button img {
+        width: 11vw;
+        height: 11vw;
+    }
+    .label {
+        margin-top: 1.7vw;
+        font-size: 1.3vw;
+    }
+    .overlay2img {
+        top: 21.7vw;
+        width: 100%;
+        height: 77vw;
+        background-color: #131313;
+        border-radius: 2.7vw 2.7vw 0vw 0vw;
+    }
+    .image-container {
+        left: 10vw;
+        width: 80.3%;
+    }
+    .image-container2 {
+        left: 10vw;
+        width: 80.3%;
+        top: 58vw;
+    }
+    .image-container img {
+        width: 24vw;
+    }
+    .image-container2 img {
+        width: 24vw;
+    }
+    .overlay2txt1 {
+        font-size: 2vw;
+        left: 45.2vw;
+        top: 57vw;
+    }
+    .overlay2txt2 {
+        width: 79.8vw;
+        line-height: 2.5vw;
+        font-size: 1vw;
+        color: white;
+        position: absolute;
+        top: 64vw;
+        left: 10vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .overlay2txt3 {
+        width: 79.8vw;
+        line-height: 2.5vw;
+        font-size: 1vw;
+        color: white;
+        position: absolute;
+        top: 70vw;
+        left: 10vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .overlay2txt4 {
+        width: 79.8vw;
+        line-height: 2.5vw;
+        font-size: 1vw;
+        color: white;
+        position: absolute;
+        top: 76.5vw;
+        left: 10vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .back-button {
+        position: absolute;
+        top: 87vw;
+        left: 45.3vw;
+        padding: 0.9vw 3vw;
+        background-color: #1e1e1e;
+        color: white;
+        font-size: 1.1vw;
+        letter-spacing: 0.1vw;
+        border-radius: 2vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        transition: 0.3s;
+    }
+    
+    /*  */
+    .footer {
+        top: 96vw;
+        width: 100%;
+        height: 32vw;
+    }
+    .containericons {
+        top: 18%;
+        left: 37.2vw;
+    }
+}
+@media (max-width: 500px) {
+    .logo {
+        width: 10vw;
+    }
+    .contact-button {
+        padding: 0vw 3vw;
+        border-radius: 5vw;
+        outline: 0.4vw solid #ffffff;
+        font-size: 2.5vw;
+    }
+    .welcomelogo {
+        width: 28vw;
+        margin-top: 1vw;
+    }
+    .txt1 {
+        margin-top: 4vw;
+        font-size: 4vw;
+    }
+    .txt2 {
+        margin-top: 0.9vw;
+        font-size: 3.4vw;
+    }
+    .txt3 {
+        line-height: 3.4vw;
+        margin-top: 5vw;
+        font-size: 2.1vw;
+    }
+    .overlay1img {
+        width: 100%;
+        height: 152vw;
+        position: relative;
+        user-select: none;
+        background-color: #161616;
+        border-radius: 9vw 9vw 0vw 0vw;
+    }
+    .overlaytxt1 {
+        top: 8%;
+        font-size: 5vw;
+        left: 36vw;
+        font-weight: 400;
+    }
+    .row {
+        position: absolute;
+        bottom: 20vw;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8.4vw;
+        row-gap: 5vw;
+        width: 100%;
+        max-width: 100vw;
+        padding: 2vw;
+        box-sizing: border-box;
+    }
+      /* Каждая из первых двух кнопок занимает 44% ширины */
+      .button-wrapper {
+        flex: 0 0 44%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* Третья кнопка — на всю строку по центру */
+      .button-wrapper:nth-child(3) {
+        flex: 0 0 100%;
+        justify-content: center;
+        display: flex;
+      }
+      /* Кнопка адаптивная */
+      .button {
+        width: 40vw;
+        height: 40vw;
+        aspect-ratio: 1 / 1;
+        background-color: #1B1B1B;
+        border: none;
+        border-radius: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+      .button:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+        background-color: #212121;
+      }
+      .button img {
+        width: 24vw;
+        height: 24vw;
+        object-fit: contain;
+    }
+      .label {
+        margin-top: 3vw;
+        font-size: 3vw;
+        color: white;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.04em;
+    }
+    .overlay2img {
+        top: 125vw;
+        width: 100%;
+        height: 307vw;
+        background-color: #131313;
+        border-radius: 9vw 9vw 0vw 0vw;
+    }
+    .pccontent{
+        display: none;
+    }
+    .mobilecontent{
+        display: block;
+    }
+    .logo-grid {
+        position: absolute;
+        top: 145vw;
+        left: 4.5vw;
+        width: 90vw;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+      .top-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 4vw;
+        margin-bottom: 4vw;
+      }
+    
+      .image-wrapper {
+        width: 43vw; /* чуть меньше половины с учетом gap */
+        max-width: 240px;
+        display: flex;
+        justify-content: center;
+      }
+    
+      .image-wrapper img {
+        width: 43vw;
+        height: auto;
+        border-radius: 5vw;
+    }
+    
+      .bottom {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .bottom img {
+        width: 90vw;
+        max-width: 500px;
+        height: auto;
+        border-radius: 2vw;
+      }
+    /*  */
+    .overlay2txt1 {
+        position: absolute;
+        top: 288vw;
+        font-size: 5vw;
+        left: 38.3vw;
+        font-weight: 500;
+    }
+    .overlay2txt2 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        color: white;
+        position: absolute;
+        top: 305vw;
+        left: 4.5vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .overlay2txt3 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        color: white;
+        position: absolute;
+        top: 329vw;
+        left: 4.5vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .overlay2txt4 {
+        width: 90vw;
+        line-height: 5vw;
+        font-size: 2.7vw;
+        color: white;
+        position: absolute;
+        top: 359.5vw;
+        left: 4.5vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        text-align: justify;
+    }
+    .back-button {
+        position: absolute;
+        top: 401vw;
+        left: 38vw;
+        padding: 3vw 8vw;
+        background-color: #1e1e1e;
+        color: white;
+        font-size: 3vw;
+        letter-spacing: 0.1vw;
+        border-radius: 5vw;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        transition: 0.3s;
+    }
+    
+    /*  */
+    .footer {
+        top: 427vw;
+        width: 100%;
+        height: 85vw;
+        background-color: #0e0e0e;
+    }
+    .containericons {
+        top: 22%;
+        gap: 12vw;
+        left: 19vw;
+    }
+    .instico {
+        font-size: 2.7vw;
+    }
+    .youtubeico {
+        font-size: 2.7vw;
+    }
+    .telegramico {
+        font-size: 2.7vw;
+    }
+    .footertxt1 {
+        top: 7vw;
+        left: -0.3vw;
+        font-size: 12.9vw;
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1.5vw;
+    }
+    .footertxt2 {
+        top: 13vw;
+        left: -0.8vw;
+        font-size: 31.3vw;
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1.5vw;
+    }
+    .footertxt3 {
+        top: 53.5vw;
+        left: -14.6vw;
+        width: 7vw;
+    }
+    .footercalltxt {
+        top: 46.5vw;
+        left: 20.6vw;
+        font-size: 2.4vw;
+    }
+    .footertxt4 {
+        top: 59vw;
+        left: -14.4vw;
+        font-size: 1.6vw;
+    }
+}
