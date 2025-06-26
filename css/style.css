@@ -11,9 +11,11 @@ body::-webkit-scrollbar-thumb {
   }
 body {
     background-color: #1B1B1B;
+    height: 100%;
 }
 html {
     background-color: #1B1B1B;
+    height: 100%;
 }
 a{
     display: inline-block;
