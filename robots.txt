@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /images/
-
-Sitemap: https://volodymyrbohopolskyi.com/sitemap.xml
